@@ -942,11 +942,11 @@ static const int CUTOFF_HEIGHT = POW_CUTOFF_HEIGHT;	// Height at the end of 2 we
 // miner's coin base reward based on nBits
 int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 {
-    int64 nSubsidy = 250 * COIN;
+    int64 nSubsidy = 10 * COIN;
 
 	if(nHeight == 1)
 	{
-		nSubsidy = TAX_PERCENTAGE * CIRCULATION_MONEY;
+		nSubsidy = 1008 * COIN;
 		return nSubsidy + nFees;
 	}
 
@@ -2513,10 +2513,10 @@ bool LoadBlockIndex(bool fAllowNew)
 {
     if (fTestNet)
     {
-        pchMessageStart[0] = 0xdd;
-        pchMessageStart[1] = 0x4d;
-        pchMessageStart[2] = 0xdd;
-        pchMessageStart[3] = 0x4d;
+        pchMessageStart[0] = 0x7a;
+        pchMessageStart[1] = 0xc5;
+        pchMessageStart[2] = 0xb2;
+        pchMessageStart[3] = 0x09;
 
         bnProofOfStakeLimit = bnProofOfStakeLimitTestNet; // 0x00000fff PoS base target is fixed in testnet
         bnProofOfWorkLimit = bnProofOfWorkLimitTestNet; // 0x0000ffff PoW base target is fixed in testnet
@@ -2872,7 +2872,7 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xdb, 0xad, 0xbd, 0xda };
+unsigned char pchMessageStart[4] = { 0x7a,  0xc5, 0xb2, 0x09 };
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 {
