@@ -50,10 +50,10 @@ script: |
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC
-  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING iauracoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=iauracoin" USE_SSE2=1
-  $HOST-strip iauracoind.exe
+  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING iaurabcoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=iauracoin" USE_SSE2=1
+  $HOST-strip iaurabcoind.exe
   mkdir $OUTDIR/daemon
-  cp iauracoind.exe $OUTDIR/daemon
+  cp iaurabcoind.exe $OUTDIR/daemon
   cd ..
   mkdir nsis
   git archive HEAD | tar -x -C nsis
