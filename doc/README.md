@@ -1,10 +1,10 @@
 
-Copyright (c) 2013-2014 Distrocoin Developers
+Copyright (c) 2013-2014 iaurabcoin Developers
 
 
-Distrocoin 0.3.0 BETA
+iaurabcoin 0.3.0 BETA
 
-Copyright (c) 2013-2014 Distrocoin Developers
+Copyright (c) 2013-2014 iaurabcoin Developers
 Copyright (c) 2013 NovaCoin Developers
 Copyright (c) 2011-2012 Bitcoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
@@ -16,7 +16,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-Distrocoin is a free open source project derived from NovaCoin, with
+iaurabcoin is a free open source project derived from NovaCoin, with
 the goal of providing a long-term energy-efficient scrypt-based crypto-currency.
 Built on the foundation of Bitcoin and NovaCoin, innovations such as proof-of-stake
 help further advance the field of crypto-currency.
@@ -24,29 +24,29 @@ help further advance the field of crypto-currency.
 Setup
 -----
 Unpack the files into a directory and run:
- bin/32/Distrocoind (headless, 32-bit)
- bin/64/Distrocoind (headless, 64-bit)
+ bin/32/iaurabcoind (headless, 32-bit)
+ bin/64/iaurabcoind (headless, 64-bit)
 
 The software automatically finds other nodes to connect to.  You can
 enable Universal Plug and Play (UPnP) with your router/firewall
 or forward port 
 
 53489 (TCP) to your computer so you can receive
-incoming connections.  Distrocoin works without incoming connections,
-but allowing incoming connections helps the Distrocoin network.
+incoming connections.  iaurabcoin works without incoming connections,
+but allowing incoming connections helps the iaurabcoin network.
 
 
 Upgrade
 -------
 All you existing coins/transactions should be intact with the upgrade.
 To upgrade first backup wallet
-Distrocoind backupwallet <destination_backup_file>
-Then shutdown Distrocoind by
-Distrocoind stop
-Start up the new Distrocoind.
+iaurabcoind backupwallet <destination_backup_file>
+Then shutdown iaurabcoind by
+iaurabcoind stop
+Start up the new iaurabcoind.
 
 
-See the documentation/wiki at the Distrocoin site:
-  http://Distrocoin.cc/
+See the documentation/wiki at the iaurabcoin site:
+  http://iaurabcoin.cc/
 for help and more information.
 
