@@ -2559,8 +2559,8 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1401310675;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 1592878;
-       if ( true  && (block.GetHash() != hashGenesisBlock)) {
+        block.nNonce   = 2677054;
+       if ( false  && (block.GetHash() != hashGenesisBlock)) {
 
         // This will figure out a valid hash and Nonce if you're
         // creating a different genesis block:
